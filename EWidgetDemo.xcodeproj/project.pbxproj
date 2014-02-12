@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0137A418A8AE2C00087D35 /* EViewSwitcherUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0137A318A8AE2C00087D35 /* EViewSwitcherUnit.m */; };
 		6C96E82618A61619009A13A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C96E82518A61619009A13A3 /* Foundation.framework */; };
 		6C96E82818A61619009A13A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C96E82718A61619009A13A3 /* CoreGraphics.framework */; };
 		6C96E82A18A61619009A13A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C96E82918A61619009A13A3 /* UIKit.framework */; };
@@ -21,6 +22,8 @@
 		6C96E84718A61619009A13A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C96E82918A61619009A13A3 /* UIKit.framework */; };
 		6C96E84F18A61619009A13A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C96E84D18A61619009A13A3 /* InfoPlist.strings */; };
 		6C96E85118A61619009A13A3 /* EWidgetDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C96E85018A61619009A13A3 /* EWidgetDemoTests.m */; };
+		6C96E85D18A61768009A13A3 /* EViewSwitcherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C96E85C18A61768009A13A3 /* EViewSwitcherVC.m */; };
+		6C96E86018A617B2009A13A3 /* EViewSwitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C96E85F18A617B2009A13A3 /* EViewSwitcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C0137A218A8AE2C00087D35 /* EViewSwitcherUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EViewSwitcherUnit.h; sourceTree = "<group>"; };
+		6C0137A318A8AE2C00087D35 /* EViewSwitcherUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EViewSwitcherUnit.m; sourceTree = "<group>"; };
 		6C96E82218A61619009A13A3 /* EWidgetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EWidgetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C96E82518A61619009A13A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6C96E82718A61619009A13A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,10 @@
 		6C96E84C18A61619009A13A3 /* EWidgetDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EWidgetDemoTests-Info.plist"; sourceTree = "<group>"; };
 		6C96E84E18A61619009A13A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C96E85018A61619009A13A3 /* EWidgetDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EWidgetDemoTests.m; sourceTree = "<group>"; };
+		6C96E85B18A61768009A13A3 /* EViewSwitcherVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EViewSwitcherVC.h; sourceTree = "<group>"; };
+		6C96E85C18A61768009A13A3 /* EViewSwitcherVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EViewSwitcherVC.m; sourceTree = "<group>"; };
+		6C96E85E18A617B2009A13A3 /* EViewSwitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EViewSwitcher.h; sourceTree = "<group>"; };
+		6C96E85F18A617B2009A13A3 /* EViewSwitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EViewSwitcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +88,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C0137A018A8A5D100087D35 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				6C96E85E18A617B2009A13A3 /* EViewSwitcher.h */,
+				6C96E85F18A617B2009A13A3 /* EViewSwitcher.m */,
+			);
+			name = Widgets;
+			sourceTree = "<group>";
+		};
+		6C0137A118A8A5DD00087D35 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6C0137A218A8AE2C00087D35 /* EViewSwitcherUnit.h */,
+				6C0137A318A8AE2C00087D35 /* EViewSwitcherUnit.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		6C96E81918A61619009A13A3 = {
 			isa = PBXGroup;
 			children = (
+				6C96E85A18A61644009A13A3 /* EWidget */,
 				6C96E82B18A61619009A13A3 /* EWidgetDemo */,
 				6C96E84A18A61619009A13A3 /* EWidgetDemoTests */,
 				6C96E82418A61619009A13A3 /* Frameworks */,
@@ -119,6 +147,8 @@
 				6C96E83B18A61619009A13A3 /* EWidgetViewController.m */,
 				6C96E83D18A61619009A13A3 /* Images.xcassets */,
 				6C96E82C18A61619009A13A3 /* Supporting Files */,
+				6C96E85B18A61768009A13A3 /* EViewSwitcherVC.h */,
+				6C96E85C18A61768009A13A3 /* EViewSwitcherVC.m */,
 			);
 			path = EWidgetDemo;
 			sourceTree = "<group>";
@@ -150,6 +180,15 @@
 				6C96E84D18A61619009A13A3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C96E85A18A61644009A13A3 /* EWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6C0137A118A8A5DD00087D35 /* Components */,
+				6C0137A018A8A5D100087D35 /* Widgets */,
+			);
+			path = EWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C96E83618A61619009A13A3 /* EWidgetAppDelegate.m in Sources */,
+				6C96E86018A617B2009A13A3 /* EViewSwitcher.m in Sources */,
 				6C96E83C18A61619009A13A3 /* EWidgetViewController.m in Sources */,
+				6C0137A418A8AE2C00087D35 /* EViewSwitcherUnit.m in Sources */,
+				6C96E85D18A61768009A13A3 /* EViewSwitcherVC.m in Sources */,
 				6C96E83218A61619009A13A3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +503,7 @@
 				6C96E85618A61619009A13A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C96E85718A61619009A13A3 /* Build configuration list for PBXNativeTarget "EWidgetDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +512,7 @@
 				6C96E85918A61619009A13A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
